@@ -1,0 +1,73 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.input_section{
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.user_handel{
+    width: 30%;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    margin-top: -10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.child{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.child button{
+    height: 40px;
+    width: 8%;
+    margin-top: -10px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    font-size: 20px;
+
+}
+.child button:hover{
+    background: #bb0303;
+    transform: scale(1.05);
+}
+.input_section h1{
+    font-size: 20px;
+    font-weight:500;
+}
+.profile{
+    background: #191f20;
+    border-radius: 20px;
+    margin: 10px;
+    width: 80%;
+    align-self: center;
+    
+}
+.basic_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.basic_info h1{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.profile_picture img{
+    border-radius: 10px;
+}

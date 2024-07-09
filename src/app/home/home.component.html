@@ -1,0 +1,66 @@
+<div class="parent">
+    <div class="input_section">
+      <div class="add_friends">
+        <select class="input_options" name="" id="">
+          <option value="">Codeforces handle</option>
+          <option value="">Codeforces organization</option>
+        </select>
+        <input
+          type="text"
+          [(ngModel)]="user_handle"
+          class="friend_handle"
+          placeholder="#Code Forces Handle"
+        />
+        <button (click)="addFriend()" class="btn_add">Add</button>
+        <div class="upload_data">
+          <input
+            type="file"
+            (change)="onFileChange($event)"
+            class="upload_file"
+            accept=".xlsx, .xls"
+          />
+          <button (click)="uploadFile()" class="btn_upload_file">
+            Start Adding
+          </button>
+          
+        </div>
+        <div>
+            <button (click)="pauseAddingFriends()" class="btn_pause_adding">
+                Pause Adding
+              </button>
+              <button (click)="resumeAddingFriends()" class="btn_resume_adding">
+                Resume Adding
+              </button>
+          </div>
+      </div>
+    </div>
+  
+    <div class="result">
+      <div>
+        <button (click)="clearData()" class="clear_data">Clear Data</button>
+        <button class="sort_data">Sort</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Handle</th>
+            <th>Name</th>
+            <th (click)="sort('currentRating')" class="parameter">Current Rating</th>
+            <th (click)="sort('maxRating')">Max Rating</th>
+            <th (click)="sort('numberOfSolve')">Number Of Solve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let friend of friends; let i = index" [attr.style]="getBackgroundColor(friend.maxRating)">
+            <td>{{ i + 1 }}</td>
+            <td>{{ friend.handleName }}</td>
+            <td>{{ friend.name }}</td>
+            <td>{{ friend.contestRating }}</td>
+            <td>{{ friend.maxRating }}</td>
+            <td>{{ friend.number_of_solve }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
