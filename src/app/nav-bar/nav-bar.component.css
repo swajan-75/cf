@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+    
+nav{
+
+    
+    background:#191f20;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure elements are evenly spaced */
+    padding: 0 10px;
+    position: relative;
+    border-radius: 3px;
+    
+}
+
+label a{
+    color: white;
+    font-size: 40px;
+    line-height: 100px; /* Adjusted line-height to match nav height */
+    padding: 0px 5px 0; 
+    font-weight: bold;
+
+    
+
+}
+label a:hover{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.nav_bg .iteams{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-top: -4px;
+
+}
+nav ul li{
+    transition: all 0.3s ease 0s;
+    margin: 0 10px;
+    line-height: 13px;
+    
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+}
+.btn_login{
+    float: right;
+    margin-left: 300px;
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+
+}
+.button{
+    transition: all 0.3s ease 0s;
+
+}
+.button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: #30492c;
+    
+    text-decoration: none;  
+}
+.logo_txt{
+    margin-top: -4px;
+    transition: transform 0.3s ease;
+
+}
+.logo_txt:hover{
+    transform: scale(1.01);
+
+}
+.nav_bg ul li .drop_down_option {
+    display: none;
+    margin-top: 8px;
+    position: absolute;
+    top: calc(100%+10px); /* Position dropdown below the host button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    
+}
+
+.nav_bg ul li:hover .drop_down_option {
+    display: block;
+}
+
+.nav_bg ul li .drop_down_option div {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+.nav_bg ul li .drop_down_option div:hover {
+    background: #30492c;
+
+}
+
+.options{
+    align-self: center;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+

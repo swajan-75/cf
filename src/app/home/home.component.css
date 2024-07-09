@@ -1,0 +1,178 @@
+.parent{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background: transparent;
+    margin-top: 10px;
+}
+.input_section{
+    height: 100%;
+    background: #191f20;
+    width: 30%;
+    border-radius: 10px;
+
+}
+.input_options{
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+    display: none;
+}
+
+.add_friends{
+    display: flex;
+    flex-direction: column;
+    background: #191f20;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 15% ;
+    border-radius: 10px;
+}
+.add_friends .friend_handle{
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+.upload_file{
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+.btn_upload_file{
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+.clear_data{
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.sort_data{
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+.add_friends .btn_add{
+    width: 20%;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    
+}
+.btn_pause_adding{
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+.btn_resume_adding{
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+button:hover{
+        background: #bb0303;
+        transform: scale(1.05);
+        
+}
+button{
+    cursor: pointer;
+    background: red;
+    
+}
+.result {
+    width: 69%;
+    background: #191f20;
+    border-radius: 10px;
+    padding: 10px;
+}
+.result table {
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 10px;
+    border-spacing: 0 20px;
+}
+.result tr {
+    border: none;
+    background: #35476D;
+    border-radius: 10px;
+}
+.result th, .result td {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+   
+  
+}
+.result th {
+    background-color: #f2f2f2;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.result tbody tr {
+    border-radius: 5px;
+    
+}
+
+.result tbody tr td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.result tbody tr td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.result thead tr th:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.result thead tr th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

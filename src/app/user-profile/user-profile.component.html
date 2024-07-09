@@ -1,0 +1,32 @@
+<div class="parent">
+  <div class="input_section">
+    <h1></h1>
+    <div class="child">
+      <input type="text" [(ngModel)]="user_handel" class="user_handel"  placeholder="#CodeForces Handel" />
+      <button (click)="update()" >Find</button>
+    </div>
+  </div>
+  <div class="profile">
+    <div class="basic_info">
+      <div class="basic_txt_info">
+        <h1>Name: {{ profileData.name }}</h1>
+        <h1>Handle Name: {{ profileData.handleName }}</h1>
+        <h1>Number of Solve: {{ profileData.number_of_solve }}</h1>
+        <h1>Number of Contest: {{profileData.number_of_contest}}</h1>
+        <h1>Rank: {{ profileData.rank }}</h1>
+        <h1>Contest Rating: {{ profileData.contestRating }}</h1>
+        <h1>Max Rating: {{ profileData.maxRating }}</h1>
+        <h1>contribution: {{ profileData.contribution }}</h1>
+        <h1>Organization: {{ profileData.organization }}</h1>
+        <h1>City: {{ profileData.city }}</h1>
+        <h1>Country: {{ profileData.country }}</h1>
+      </div>
+      <div class="profile_picture">
+        <img id="profile_photo"
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExczlvdmJtd3ltdHdwdm16NDNoZ2NkYTR3cWpiYmFlbWJtYmowZHI2ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QHE5gWI0QjqF2/giphy.webp"
+          alt="Profile Image"
+        />
+      </div>
+    </div>
+  </div>
+</div>
